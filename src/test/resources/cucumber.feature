@@ -1,13 +1,12 @@
 #language: pt
-
-Funcionalidade: Consulta de produto no e-commerce Submarino
-	Eu quero realizar a consulta de um produto no e-commerce Submarino
-
+Funcionalidade: Consulta de produto no site Submarino
+	Eu quero realizar a consulta de um produto no site Submarino
 
 
-Esquema do Cenário: Realizar consulta do "<PRODUTO>" com sucesso
+
+Esquema do Cenário: Realizar consulta de com sucesso
 Dado que eu acesse o site do Submarino
-E preencha o campo de Pesquisa
+E preencha o campo de Pesquisa com o nome do "<PRODUTO>"
 Quando eu clicar no icone Lupa
 Então a pagina "Resultado da Busca" é exibida
 E o produto pesquisado é exibido
@@ -21,9 +20,9 @@ Exemplos:
 
 
 
-Esquema do Cenário: Realizar consulta do "<PRODUTO>" sem resultados
+Esquema do Cenário: Realizar consulta de sem resultados
 Dado que eu acesse o site do Submarino
-E preencha o campo de Pesquisa com dados invalidos
+E preencha o campo de Pesquisa com o nome do "<PRODUTO>"
 Quando eu clicar no icone Lupa
 Então a pagina "Resultado da Busca" é carregada
 E a mensagem "<MENSAGEM>" é exibida
