@@ -8,7 +8,7 @@ public class CucumberSteps {
 
 	@Dado("^que eu acesse o site do Submarino$")
 	public void que_eu_acesse_o_site_do_Submarino() throws Throwable {
-// teste
+// teste 
 	}
 
 	@Dado("^preencha o campo de Pesquisa com o nome do \"([^\"]*)\"$")
